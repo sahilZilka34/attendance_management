@@ -15,7 +15,7 @@ spring:
     open-in-view: false
 
 server:
-  port: ${PORT:6969}
+  port: ${PORT:8080}
 
 cors:
   allowed-origins: ${ALLOWED_ORIGINS:http://localhost:3000}
