@@ -1,22 +1,21 @@
 spring:
-  application:
-    name: attendance-system
-
   datasource:
-    url: jdbc:postgresql://localhost:5432/attendance_db
-    username: postgres
-    password: postgres
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: org.postgresql.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     open-in-view: false
 
 server:
-  port: 8080
+  port: ${PORT:6969}
+
+cors:
+  allowed-origins: ${ALLOWED_ORIGINS:http://localhost:3000}
