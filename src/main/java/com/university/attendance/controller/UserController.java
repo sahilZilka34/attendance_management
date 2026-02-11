@@ -3,7 +3,6 @@ package com.university.attendance.controller;
 import com.university.attendance.dto.CreateUserRequest;
 import com.university.attendance.dto.UserDTO;
 import com.university.attendance.entity.User;
-import com.university.attendance.entity.UserRole;
 import com.university.attendance.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
