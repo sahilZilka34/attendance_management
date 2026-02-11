@@ -15,5 +15,6 @@ build/
 
 # Env / secrets
 .env
+start.bat
 application-local.properties
 application-dev.properties
